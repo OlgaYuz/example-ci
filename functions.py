@@ -8,4 +8,6 @@ def multiply(a, b):
     return a * b
 
 def convert_fahrenheit_to_celsius(fahrenheit):
-    return multiply(subtract(fahrenheit, 32), 9 / 5) # <-- Fix this in step 7
+    celsius= multiply(subtract(fahrenheit, 32), 5 / 9) # <-- Fix this in step 7
+    assert celsius >= -273.15
+    return celsius
